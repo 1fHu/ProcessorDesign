@@ -1,3 +1,8 @@
+## Data memory
+`data_memory_tb.v` is the testbench file
+
+## Register
+`register.v` located in register folder
 
 ## Arithmetic and Logic Unit (ALU)
 `alu.v` is the file
