@@ -1,0 +1,204 @@
+$date
+	Tue Oct 28 21:10:49 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module control_tb $end
+$var wire 1 ! WE_rf $end
+$var wire 1 " WE_dmem $end
+$var wire 2 # MUX_tgt [1:0] $end
+$var wire 1 $ MUX_rf $end
+$var wire 2 % MUX_pc [1:0] $end
+$var wire 1 & MUX_alu2 $end
+$var wire 1 ' MUX_alu1 $end
+$var wire 2 ( FUNC_alu [1:0] $end
+$var parameter 3 ) ADD $end
+$var parameter 3 * ADDI $end
+$var parameter 3 + BEQ $end
+$var parameter 3 , JALR $end
+$var parameter 3 - LUI $end
+$var parameter 3 . LW $end
+$var parameter 3 / NAND $end
+$var parameter 3 0 SW $end
+$var reg 1 1 EQ $end
+$var reg 3 2 op [2:0] $end
+$scope module uut $end
+$var wire 1 1 EQ $end
+$var wire 3 3 op [2:0] $end
+$var parameter 3 4 ADD $end
+$var parameter 3 5 ADDI $end
+$var parameter 3 6 BEQ $end
+$var parameter 3 7 JALR $end
+$var parameter 3 8 LUI $end
+$var parameter 3 9 LW $end
+$var parameter 3 : NAND $end
+$var parameter 3 ; SW $end
+$var reg 2 < FUNC_alu [1:0] $end
+$var reg 1 ' MUX_alu1 $end
+$var reg 1 & MUX_alu2 $end
+$var reg 2 = MUX_pc [1:0] $end
+$var reg 1 $ MUX_rf $end
+$var reg 2 > MUX_tgt [1:0] $end
+$var reg 1 " WE_dmem $end
+$var reg 1 ! WE_rf $end
+$upscope $end
+$scope task check_outputs $end
+$var reg 2 ? exp_FUNC_alu [1:0] $end
+$var reg 1 @ exp_MUX_alu1 $end
+$var reg 1 A exp_MUX_alu2 $end
+$var reg 2 B exp_MUX_pc [1:0] $end
+$var reg 1 C exp_MUX_rf $end
+$var reg 2 D exp_MUX_tgt [1:0] $end
+$var reg 1 E exp_WE_dmem $end
+$var reg 1 F exp_WE_rf $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 ;
+b10 :
+b100 9
+b11 8
+b111 7
+b110 6
+b1 5
+b0 4
+b101 0
+b10 /
+b100 .
+b11 -
+b111 ,
+b110 +
+b1 *
+b0 )
+$end
+#0
+$dumpvars
+xF
+xE
+bx D
+xC
+bx B
+xA
+x@
+bx ?
+b1 >
+b0 =
+b0 <
+b0 3
+b0 2
+01
+b0 (
+0'
+0&
+b0 %
+0$
+b1 #
+0"
+1!
+$end
+#20000
+1&
+1!
+b1 #
+b1 >
+b1 2
+b1 3
+0E
+1F
+b1 D
+0C
+b0 B
+0A
+0@
+b0 ?
+#30000
+b1 (
+b1 <
+1!
+b1 #
+b1 >
+0&
+b10 2
+b10 3
+1A
+#40000
+1'
+1!
+b1 #
+b1 >
+b10 (
+b10 <
+b11 2
+b11 3
+0A
+b1 ?
+#50000
+1&
+1!
+b0 #
+b0 >
+0'
+b0 (
+b0 <
+b100 2
+b100 3
+1@
+b10 ?
+#60000
+1"
+1$
+0!
+1&
+b101 2
+b101 3
+b0 D
+1A
+0@
+b0 ?
+#70000
+b11 (
+b11 <
+0"
+1$
+0&
+b110 2
+b110 3
+1E
+0F
+1C
+#80000
+b1 %
+b1 =
+1$
+b11 (
+b11 <
+11
+0E
+0A
+b11 ?
+#90000
+1!
+b10 #
+b10 >
+0$
+b10 %
+b10 =
+b10 (
+b10 <
+01
+b111 2
+b111 3
+b1 B
+#100000
+1F
+b10 D
+0C
+b10 B
+b10 ?
+#110000
