@@ -2,8 +2,6 @@
 ## Combined
 `risc16_processor.v` is the file
 
-Small error still need to be fixed.
-
 ## Instruction Memory
 `instruction_memory` is the instruction memory file
 
